@@ -1,0 +1,16 @@
+
+################### English Navigation ########################
+[[main]]
+name = "about"
+url = "#about"
+weight = 1
+
+[[main]]
+name = "team"
+url = "#team"
+weight = 2
+
+[[main]]
+name = "blog"
+url = "#blog"
+weight = 3

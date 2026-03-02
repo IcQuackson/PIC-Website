@@ -1,0 +1,34 @@
+############################### team ############################
+team:
+  enable : true
+  title : Our Team
+  team_member :
+    - name : Vicente Ferreira
+      image : "images/team/team-1.jpg"
+      designation : "Student | 110420"
+      content : "[Email](mailto:vicente.frazao.ferreira@tecnico.ulisboa.pt)"
+      
+    - name : Pedro Gonçalves
+      image : "images/team/team-2.jpg"
+      designation : "Student | 87559"
+      content : "[Email](mailto:pedrorenato@tecnico.ulisboa.pt)"
+        
+    - name : Leonardo Catarino
+      image : "images/team/team-3.jpg"
+      designation : "Student | 106778"
+      content : "[Email](mailto:leonardo.catarino@tecnico.ulisboa.pt)"
+        
+    - name : Eduardo Curiao
+      image : "images/team/team-4.jpg"
+      designation : "Student | 109709"
+      content : "[Email](mailto:eduardo.curiao@tecnico.ulisboa.pt)"
+
+    - name : Dylan Félix
+      image : "images/team/team-1.jpg"
+      designation : "Student | 110749"
+      content : "[Email](mailto:dylan.m.felix@tecnico.ulisboa.pt)"
+
+    - name : Henrique Ferreira
+      image : "images/team/team-2.jpg"
+      designation : "Student | 110385"
+      content : "[Email](mailto:henriquesantosferreira40@tecnico.ulisboa.pt)"

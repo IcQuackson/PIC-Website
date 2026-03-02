@@ -1,0 +1,21 @@
+
+################### French Navigation ########################
+[[main]]
+name = "sur"
+url = "#about"
+weight = 1
+
+[[main]]
+name = "équipe"
+url = "#team"
+weight = 2
+
+[[main]]
+name = "blog"
+url = "#blog"
+weight = 3
+
+[[main]]
+name = "themefisher"
+url = "https://themefisher.com/"
+weight = 4

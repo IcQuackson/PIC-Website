@@ -1,0 +1,10 @@
+############################# About ###################################
+about:
+  enable : true
+  title : "About Us"
+  
+  
+  about_item:
+    - icon : "ti-file" # This adds a nice file icon next to the button
+      title : "Project Proposal"
+      content : "<a href='uploads/proposal.pdf' target='_blank' class='btn btn-main'>Download the PDF</a>"
