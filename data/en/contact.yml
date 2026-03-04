@@ -1,0 +1,19 @@
+########################## Contact #############################
+contact:
+  enable : true
+  title : "Contact Team"
+  subtitle : "ElectroCap (PIC1), Instituto Superior Técnico"
+  content : "For collaboration, field testing, or technical review, contact the project leads."
+
+  contact_list:
+    - icon : "ti-email"
+      info : "pedrorenato@tecnico.ulisboa.pt"
+    - icon : "ti-email"
+      info : "vicente.frazao.ferreira@tecnico.ulisboa.pt"
+    - icon : "ti-link"
+      info : "https://icquackson.github.io/PIC-Website/"
+    - icon : "ti-location-pin"
+      info : "Instituto Superior Técnico, Lisbon"
+
+  contact_form:
+    enable : false

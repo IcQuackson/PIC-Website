@@ -1,0 +1,27 @@
+{{ $data := index site.Data site.Language.Lang }}
+
+{{ if $data.visuals.visuals.enable }}
+{{ with $data.visuals.visuals }}
+<section id="visuals" class="section visuals-section">
+  <div class="container">
+    <div class="title text-center wow fadeIn" data-wow-duration="500ms">
+      <h2>{{ .title }}</h2>
+      <div class="border-meghna"></div>
+    </div>
+    <div class="row">
+      {{ range .items }}
+      <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-duration="500ms">
+        <article class="visual-card">
+          {{ partial "image" (dict "Src" .image "Alt" .title "Class" "img-fluid") }}
+          <div class="visual-card-body">
+            <h3>{{ .title }}</h3>
+            <p>{{ .text }}</p>
+          </div>
+        </article>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

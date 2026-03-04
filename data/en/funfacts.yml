@@ -1,0 +1,20 @@
+############################# funfacts ##################################
+funfacts:
+  enable : true
+  bg_image : "images/backgrounds/bg-testimonial.jpg"
+  counter_item:
+    - title : "Partition Detection"
+      icon : "ti-timer"
+      count : "20"
+
+    - title : "UAV Boot To Mesh"
+      icon : "ti-bolt"
+      count : "60"
+
+    - title : "Reconvergence Target"
+      icon : "ti-reload"
+      count : "30"
+
+    - title : "Ground Autonomy Goal (h)"
+      icon : "ti-power-off"
+      count : "8"

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Aerial-ground SAR networking backdrop</title>
+  <desc id="desc">Stylized mountains with node links and UAV relay paths.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07111f" />
+      <stop offset="100%" stop-color="#14304f" />
+    </linearGradient>
+    <linearGradient id="ridge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1f3f5f" />
+      <stop offset="100%" stop-color="#0f2237" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)" />
+  <g fill="url(#ridge)" opacity="0.9">
+    <path d="M0 720 L220 460 L410 620 L620 380 L860 640 L1080 420 L1280 610 L1600 400 L1600 900 L0 900 Z" />
+    <path d="M0 780 L260 560 L520 730 L760 520 L1020 760 L1280 550 L1600 740 L1600 900 L0 900 Z" fill="#0b1a2b" />
+  </g>
+  <g stroke="#5fd7dd" stroke-width="3" stroke-dasharray="9 8" opacity="0.85" fill="none">
+    <path d="M250 610 L470 540 L730 590 L920 500 L1180 560" />
+    <path d="M470 540 L610 420 L780 380 L920 500" />
+  </g>
+  <g fill="#7ee7ea">
+    <circle cx="250" cy="610" r="7"/>
+    <circle cx="470" cy="540" r="7"/>
+    <circle cx="730" cy="590" r="7"/>
+    <circle cx="920" cy="500" r="7"/>
+    <circle cx="1180" cy="560" r="7"/>
+    <circle cx="610" cy="420" r="8" fill="#ff9f6d"/>
+    <circle cx="780" cy="380" r="8" fill="#ff9f6d"/>
+  </g>
+  <g fill="#d9f4ff" font-family="IBM Plex Sans, sans-serif" font-size="26" opacity="0.9">
+    <text x="238" y="650">Team A</text>
+    <text x="704" y="628">Ground Relay</text>
+    <text x="888" y="535">Command</text>
+    <text x="740" y="345">UAV Relay</text>
+  </g>
+</svg>

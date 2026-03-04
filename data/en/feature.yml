@@ -1,0 +1,23 @@
+############################### Feature ###################################
+feature:
+  enable : true
+  image : "images/backgrounds/hero-sar.svg"
+  image_webp : "images/backgrounds/hero-sar.svg"
+  title : "System Architecture"
+  content : "Command, team nodes, ground relay, and UAV relay operate in one offline network."
+  feature_item:
+    - icon : "ti-rss-alt"
+      title : "Mesh Backbone"
+      content : "BATMAN-adv on 2.4 GHz Wi-Fi with fixed node roles."
+
+    - icon : "ti-volume"
+      title : "PTT Voice"
+      content : "Local Murmur + Mumble with no internet dependency."
+
+    - icon : "ti-map-alt"
+      title : "Telemetry"
+      content : "GPS, link quality, and partition state are tracked locally."
+
+    - icon : "ti-control-shuffle"
+      title : "Autonomous Repair"
+      content : "UAV relay repositions to reconnect partitions and stabilize routes."

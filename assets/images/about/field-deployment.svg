@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Field deployment scene</title>
+  <desc id="desc">Stylized responders, mast relay, and UAV in mountain terrain.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#132640" />
+      <stop offset="100%" stop-color="#0a1728" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="760" fill="url(#bg)" />
+  <path d="M0 560 L170 430 L340 550 L520 410 L710 560 L900 440 L1100 560 L1200 500 L1200 760 L0 760 Z" fill="#1f3a55"/>
+  <path d="M0 620 L230 500 L440 620 L640 500 L840 620 L1050 500 L1200 610 L1200 760 L0 760 Z" fill="#10263c"/>
+
+  <g transform="translate(240,420)">
+    <rect x="0" y="120" width="120" height="35" rx="8" fill="#274c6a"/>
+    <rect x="52" y="0" width="16" height="120" fill="#7ee7ea"/>
+    <line x1="60" y1="0" x2="20" y2="30" stroke="#7ee7ea"/>
+    <line x1="60" y1="0" x2="100" y2="30" stroke="#7ee7ea"/>
+    <circle cx="60" cy="0" r="8" fill="#ff9f6d"/>
+  </g>
+
+  <g transform="translate(720,260)">
+    <rect x="0" y="40" width="90" height="20" rx="10" fill="#7ee7ea"/>
+    <rect x="35" y="0" width="20" height="40" rx="5" fill="#7ee7ea"/>
+    <rect x="-30" y="45" width="30" height="8" fill="#9dd7f5"/>
+    <rect x="90" y="45" width="30" height="8" fill="#9dd7f5"/>
+    <circle cx="45" cy="60" r="6" fill="#ff9f6d"/>
+  </g>
+
+  <g fill="#d8f3ff" font-family="IBM Plex Sans, sans-serif" font-size="30">
+    <text x="170" y="145">Field Deployment Drill</text>
+  </g>
+  <g fill="#9fc4e3" font-family="IBM Plex Sans, sans-serif" font-size="22">
+    <text x="170" y="185">Ground nodes + relay mast + UAV support in offline mode</text>
+  </g>
+</svg>

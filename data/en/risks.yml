@@ -1,0 +1,13 @@
+risks:
+  enable: true
+  title: "Technical Risks and Mitigations"
+  items:
+    - title: "Software and Networking"
+      risk: "Configuration drift, QoS degradation under loss, and unreliable offline discovery."
+      mitigation: "Scripted OpenWrt/BATMAN config bundles, bench replay tests, acceptance harness automation."
+    - title: "Hardware and Power"
+      risk: "Payload runtime shortfall, enclosure strain, vibration and connector failures."
+      mitigation: "Power budget model, inline voltage/current logging, ruggedized mounts and cable strain relief."
+    - title: "RF and Field Conditions"
+      risk: "Vegetation/terrain attenuation causes unstable links and poor spacing decisions."
+      mitigation: "Walk tests, RSSI/SNR/TQ maps, spacing rules, and altitude-band guidance from telemetry."

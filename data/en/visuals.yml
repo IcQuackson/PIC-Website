@@ -1,0 +1,13 @@
+visuals:
+  enable: true
+  title: "Field and Evidence Visuals"
+  items:
+    - title: "Architecture Diagram"
+      image: "images/about/architecture-diagram.svg"
+      text: "Command, team nodes, ground relay, and UAV relay integration."
+    - title: "Field Deployment"
+      image: "images/about/field-deployment.svg"
+      text: "Deployment scene with ground relay hardware and UAV support."
+    - title: "KPI Dashboard Preview"
+      image: "images/about/kpi-chart.svg"
+      text: "Operational trend view for detection, restoration, and setup metrics."

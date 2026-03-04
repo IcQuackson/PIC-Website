@@ -1,0 +1,25 @@
+{{ $data := index site.Data site.Language.Lang }}
+
+{{ if $data.risks.risks.enable }}
+{{ with $data.risks.risks }}
+<section id="risks" class="section risks-section">
+  <div class="container">
+    <div class="title text-center wow fadeIn" data-wow-duration="500ms">
+      <h2>{{ .title }}</h2>
+      <div class="border-meghna"></div>
+    </div>
+    <div class="row">
+      {{ range .items }}
+      <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-duration="500ms">
+        <article class="risk-card">
+          <h3>{{ .title }}</h3>
+          <p><strong>Risk:</strong> {{ .risk }}</p>
+          <p><strong>Mitigation:</strong> {{ .mitigation }}</p>
+        </article>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

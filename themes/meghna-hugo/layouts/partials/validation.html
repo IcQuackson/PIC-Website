@@ -1,0 +1,25 @@
+{{ $data := index site.Data site.Language.Lang }}
+
+{{ if $data.validation.validation.enable }}
+{{ with $data.validation.validation }}
+<section id="validation" class="section validation-strip">
+  <div class="container">
+    <div class="title text-center wow fadeIn" data-wow-duration="500ms">
+      <h2>{{ .title }}</h2>
+      <div class="border-meghna"></div>
+    </div>
+    <div class="row justify-content-center">
+      {{ range .items }}
+      <div class="col-lg col-md-4 col-sm-6 col-12 wow fadeInUp" data-wow-duration="500ms">
+        <article class="metric-chip text-center">
+          <h3>{{ .value }}</h3>
+          <h4>{{ .label }}</h4>
+          <p>{{ .detail }}</p>
+        </article>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

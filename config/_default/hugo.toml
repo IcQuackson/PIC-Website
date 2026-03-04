@@ -1,17 +1,17 @@
 ################################# Default configuration ###################
 BaseURL = "https://icquackson.github.io/PIC-Website/"
-title = "PIC"
+title = "Aerial-Ground Mesh Networking SAR"
 theme = "meghna-hugo"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
-timeZone = "America/New_York"
+timeZone = "Europe/Lisbon"
 # post pagination
 pagination.pagerSize = 6 # see https://gohugo.io/extras/pagination/
 # post excerpt
 summaryLength = 15 # see https://gohugo.io/content-management/excerpts/
 # google analytics
-googleAnalytics = "UA-123456-78" # example: UA-123456-78, for more info, read the article https://support.google.com/analytics/answer/1008080?hl=en
+googleAnalytics = ""
 # disqus short name
-disqusShortname = "themefisher-template" # we use disqus to show comments in blog posts . To install disqus please follow this tutorial https://portfolio.peter-baumgartner.net/2017/09/10/how-to-install-disqus-on-hugo/
+disqusShortname = ""
 # disable language
 disableLanguages = [ "fr"
 ] # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
@@ -70,7 +70,7 @@ link = "plugins/magnific-popup/magnific-popup.css"
 [[params.plugins.css]]
 link = "plugins/slick/slick.css"
 [[params.plugins.css]]
-link = "https://fonts.googleapis.com/css?family=Anaheim|Quattrocento+Sans:400,700&display=swap"
+link = "https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
 
 # js plugins
 [[params.plugins.js]]
@@ -94,10 +94,12 @@ link = "plugins/google-map/map.js"
 
 ############################# Default Parameters ##########################
 [params]
-logo = "images/logo.png"
+logo = "images/logo-main.png"
 # Meta data
-description = "Responsive Multipurpose Parallax Hugo Template"
-author = "Themefisher"
+description = "Aerial-Ground Mesh Networking System for Wilderness Search and Rescue"
+author = "ElectroCap PIC1 Team"
+favicon = "images/logo-main.png"
+social_image = "images/logo-main.png"
 # Google Analytics
 google_analytics_id = "" # Your ID
 # post share

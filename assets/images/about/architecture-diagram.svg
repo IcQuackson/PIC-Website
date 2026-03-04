@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">System architecture diagram</title>
+  <desc id="desc">Command, team nodes, ground relay, and UAV relay with telemetry and service links.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1a2a" />
+      <stop offset="100%" stop-color="#122b42" />
+    </linearGradient>
+  </defs>
+  <rect width="1400" height="900" fill="url(#bg)" />
+  <g stroke="#274c6a" stroke-width="2">
+    <rect x="130" y="120" width="360" height="170" rx="18" fill="#1a3550" />
+    <rect x="520" y="120" width="360" height="170" rx="18" fill="#1a3550" />
+    <rect x="910" y="120" width="360" height="170" rx="18" fill="#1a3550" />
+    <rect x="310" y="410" width="360" height="170" rx="18" fill="#17324c" />
+    <rect x="730" y="410" width="360" height="170" rx="18" fill="#17324c" />
+    <rect x="520" y="670" width="360" height="150" rx="18" fill="#142d43" />
+  </g>
+  <g font-family="Space Grotesk, sans-serif" fill="#e9f5ff">
+    <text x="170" y="170" font-size="36">Team Node A</text>
+    <text x="170" y="214" font-size="24" fill="#a7c5dd">Telemetry Agent + AP</text>
+    <text x="560" y="170" font-size="36">Command Node</text>
+    <text x="560" y="214" font-size="24" fill="#a7c5dd">Murmur + Dashboard + Logs</text>
+    <text x="950" y="170" font-size="36">Team Node B</text>
+    <text x="950" y="214" font-size="24" fill="#a7c5dd">Telemetry Agent + AP</text>
+    <text x="350" y="460" font-size="36">Ground Relay</text>
+    <text x="350" y="504" font-size="24" fill="#a7c5dd">BATMAN Peer + Forwarding</text>
+    <text x="770" y="460" font-size="36">UAV Relay</text>
+    <text x="770" y="504" font-size="24" fill="#a7c5dd">Autonomous Repositioning</text>
+    <text x="560" y="725" font-size="34">Closed Offline Mesh</text>
+    <text x="560" y="765" font-size="24" fill="#a7c5dd">No external infrastructure dependency</text>
+  </g>
+  <g stroke="#67dfe6" stroke-width="4" fill="none" stroke-dasharray="10 8">
+    <path d="M490 205 L520 205"/>
+    <path d="M880 205 L910 205"/>
+    <path d="M490 240 L350 410"/>
+    <path d="M880 240 L910 410"/>
+    <path d="M670 290 L670 410"/>
+    <path d="M880 495 L880 670"/>
+    <path d="M490 495 L520 670"/>
+  </g>
+  <g fill="#ff9f6d">
+    <circle cx="670" cy="410" r="11"/>
+    <circle cx="880" cy="410" r="11"/>
+    <circle cx="520" cy="670" r="11"/>
+    <circle cx="880" cy="670" r="11"/>
+  </g>
+</svg>

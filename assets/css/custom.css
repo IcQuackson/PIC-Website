@@ -90,6 +90,7 @@ a:focus {
 
 .navigation .navbar {
   padding: 14px 0;
+  min-height: 72px;
 }
 
 .navigation .navbar-brand {
@@ -806,7 +807,7 @@ h6,
 }
 
 .hero-area h1 {
-  font-size: clamp(1.3rem, 2.4vw, 2.05rem);
+  font-size: clamp(2.73rem, 5.8vw, 4.7rem) !important;
   margin-bottom: 10px;
 }
 
@@ -866,22 +867,67 @@ h6,
 
 .member-contact p {
   margin: 0;
+  color: #b9ddfb;
+  font-size: 0.9rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
-.member-contact a {
-  display: inline-block;
-  padding: 6px 10px;
-  border: 1px solid rgba(159, 238, 243, 0.45);
-  border-radius: 999px;
-  color: #bff7ff;
-  font-size: 0.88rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
+/* Hard nav-logo cap */
+.navigation .navbar-brand {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  flex: 0 0 auto !important;
+  width: auto !important;
+  max-width: 190px !important;
+  margin-right: 16px !important;
 }
 
-.member-contact a:hover,
-.member-contact a:focus {
-  color: #e9fdff;
-  border-color: #9feef3;
-  background: rgba(15, 163, 177, 0.14);
+.navigation .nav-shell {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navigation .navbar-brand picture {
+  display: inline-flex !important;
+  width: auto !important;
+  max-width: 100% !important;
+}
+
+.navigation .navbar-brand img {
+  display: block !important;
+  width: auto !important;
+  height: 36px !important;
+  max-width: 100% !important;
+  max-height: 36px !important;
+  object-fit: contain !important;
+}
+
+.navigation .navbar-collapse {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navigation .navbar-nav.nav-center {
+  margin-left: 0;
+  margin-right: 0;
+  gap: 6px;
+  align-items: center;
+}
+
+.footer-attribution {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.footer-ist-logo {
+  height: 24px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.95;
 }

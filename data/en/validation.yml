@@ -1,0 +1,19 @@
+validation:
+  enable: true
+  title: "Validation Snapshot"
+  items:
+    - label: "Partition Detection"
+      value: "<=20 s"
+      detail: "From failure signal to detection flag"
+    - label: "UAV Join"
+      value: "<=60 s"
+      detail: "Boot-to-mesh after power-on"
+    - label: "Reconvergence"
+      value: "<=30 s"
+      detail: "After UAV joins"
+    - label: "Deployment"
+      value: "<=10 min"
+      detail: "Transport state to operational mesh"
+    - label: "Payload Mass"
+      value: "<500 g"
+      detail: "Including mount and power"

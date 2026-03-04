@@ -1,10 +1,17 @@
 ############################# About ###################################
 about:
   enable : true
-  title : "About Us"
-  
-  
+  title : "Mission Focus"
+
   about_item:
-    - icon : "ti-file" # This adds a nice file icon next to the button
-      title : "Project Proposal"
-      content : "<a href='uploads/proposal.pdf' target='_blank' class='btn btn-main'>Download the PDF</a>"
+    - icon : "ti-alert"
+      title : "Problem"
+      content : "Terrain can split responders into disconnected mesh groups."
+
+    - icon : "ti-direction-alt"
+      title : "Goal"
+      content : "Restore team connectivity and PTT using a UAV relay in a closed offline mesh."
+
+    - icon : "ti-check-box"
+      title : "Proof"
+      content : "Show fail-before-UAV and pass-after-UAV with logged timing evidence."

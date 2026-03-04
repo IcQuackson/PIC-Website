@@ -1,34 +1,52 @@
 ############################### team ############################
 team:
   enable : true
-  title : Our Team
+  title : Core Team and Advisors
   team_member :
     - name : Vicente Ferreira
-      image : "images/team/team-1.jpg"
-      designation : "Student | 110420"
-      content : "[Email](mailto:vicente.frazao.ferreira@tecnico.ulisboa.pt)"
-      
+      image_webp : images/team/pfp.webp
+      image : images/team/pfp.jpg
+      designation : "Field Hardware and Deployment Lead | 110420"
+      content : "vicente.frazao.ferreira@tecnico.ulisboa.pt"
+
     - name : Pedro Gonçalves
-      image : "images/team/team-2.jpg"
-      designation : "Student | 87559"
-      content : "[Email](mailto:pedrorenato@tecnico.ulisboa.pt)"
-        
+      image_webp : images/team/pfp.webp
+      image : images/team/pfp.jpg
+      designation : "Networking and Integration Lead | 87559"
+      content : "pedrorenato@tecnico.ulisboa.pt"
+
     - name : Leonardo Catarino
-      image : "images/team/team-3.jpg"
-      designation : "Student | 106778"
-      content : "[Email](mailto:leonardo.catarino@tecnico.ulisboa.pt)"
-        
-    - name : Eduardo Curiao
-      image : "images/team/team-4.jpg"
-      designation : "Student | 109709"
-      content : "[Email](mailto:eduardo.curiao@tecnico.ulisboa.pt)"
+      image_webp : images/team/pfp.webp
+      image : images/team/pfp.jpg
+      designation : "UAV Payload and Flight Operations Lead | 106778"
+      content : "leonardo.catarino@tecnico.ulisboa.pt"
+
+    - name : Eduardo Curião
+      image_webp : images/team/pfp.webp
+      image : images/team/pfp.jpg
+      designation : "Power and Autonomy Lead | 109709"
+      content : "eduardo.curiao@tecnico.ulisboa.pt"
 
     - name : Dylan Félix
-      image : "images/team/team-1.jpg"
-      designation : "Student | 110749"
-      content : "[Email](mailto:dylan.m.felix@tecnico.ulisboa.pt)"
+      image_webp : images/team/pfp.webp
+      image : images/team/pfp.jpg
+      designation : "Monitoring and Guidance Software Lead | 110749"
+      content : "dylan.m.felix@tecnico.ulisboa.pt"
 
     - name : Henrique Ferreira
-      image : "images/team/team-2.jpg"
-      designation : "Student | 110385"
-      content : "[Email](mailto:henriquesantosferreira40@tecnico.ulisboa.pt)"
+      image_webp : images/team/pfp.webp
+      image : images/team/pfp.jpg
+      designation : "Voice and User Workflow Lead | 110349"
+      content : "henriquesantosferreira40@tecnico.ulisboa.pt"
+
+    - name : Prof. Ayman M. Radwan
+      image_webp : images/team/pfp.webp
+      image : images/team/pfp.jpg
+      designation : "Scientific Advisor"
+      content : ""
+
+    - name : Mariana Santana
+      image_webp : images/team/pfp.webp
+      image : images/team/pfp.jpg
+      designation : "Scientific Co-advisor"
+      content : ""

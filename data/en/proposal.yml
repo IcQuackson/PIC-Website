@@ -1,0 +1,46 @@
+proposal:
+  enable: true
+
+  requirements:
+    title: "Requirements and Constraints"
+    items:
+      - "Partition detection procedure <=20 s"
+      - "UAV boot-to-mesh <=60 s"
+      - "Reconvergence <=30 s after UAV join"
+      - "Deployment <=10 min from transport state"
+      - "Ground autonomy >=8 h"
+      - "Payload mass <500 g"
+      - "Autonomous repair without operator connectivity to UAV"
+      - "Scalability: >=2 teams with >=1 UAV relay"
+
+  acceptance:
+    title: "Acceptance Matrix"
+    columns: ["Objective Proof", "Pass Criteria"]
+    rows:
+      - proof: "Pre-UAV partition proof"
+        criteria: "No route, ping fail, PTT fail, topology split."
+      - proof: "Hard link thresholds"
+        criteria: "RSSI >= -75 dBm, SNR >= 20 dB, TQ >= 200/255, loss <= 10%, median RTT <= 50 ms (30 s window)."
+      - proof: "UAV entry timing"
+        criteria: "UAV relay joins mesh in <= 60 s."
+      - proof: "Post-UAV recovery proof"
+        criteria: "Route restored, ping succeeds, PTT succeeds."
+      - proof: "Reconvergence timing"
+        criteria: "Recovery in <= 30 s after UAV join."
+      - proof: "Deployment timing"
+        criteria: "Full setup in <= 10 min."
+      - proof: "Autonomy run"
+        criteria: "Ground nodes run >= 8 h with logs."
+
+  kpis:
+    title: "Operational KPI Dashboard"
+    items:
+      - "Time-to-detect partition event"
+      - "Time-to-restore PTT after autonomous repositioning"
+      - "Autonomous repair success rate with operator link unavailable"
+      - "Time saved using pre-planned hover points"
+      - "Maximum separation distance with successful restoration"
+      - "Setup time to closed offline network"
+      - "UAV relay mission time with payload battery"
+
+  primary_success: "Primary success criterion: fail before UAV, pass after UAV."

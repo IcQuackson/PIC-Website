@@ -1,9 +1,15 @@
 {{"<!-- end Contact Area -->" | safeHTML}}
 <footer id="footer" class="bg-one">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-12">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-12 col-12 text-center">
+        <div class="footer-attribution">
+          <img src="{{ `images/ist-logo.png` | relURL }}" alt="Instituto Superior Técnico" class="footer-ist-logo">
+          <p class="footer-meta">
+            ElectroCap (PIC1) • A student-led project at Instituto Superior Técnico • Last updated {{ now.Format "January 2, 2006" }}
+          </p>
         </div>
+      </div>
     </div>
   </div>
 </footer>
@@ -16,12 +22,16 @@
 
 {{ "<!-- JS Plugins -->" | safeHTML }}
 {{ range site.Params.plugins.js}}
-<script src="{{ .link | absURL }}"></script>
+{{ if findRE `^https?://` .link }}
+<script src="{{ .link }}"></script>
+{{ else }}
+<script src="{{ .link | relURL }}"></script>
+{{ end }}
 {{ end }}
 
 {{ "<!-- Main Script -->" | safeHTML }}
 {{ $script := resources.Get "js/script.js" | minify | fingerprint "sha384"}}
-<script src="{{ $script.Permalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+<script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
 
 <!-- cookie -->
 {{ if site.Params.cookies.enable }}

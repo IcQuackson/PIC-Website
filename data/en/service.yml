@@ -1,0 +1,24 @@
+############################### Service ###################################
+service:
+  enable : true
+  title : "Operational Workflow"
+  service_item:
+    - name : "0. Pre-Plan"
+      icon : "ti-layout-grid2-thumb"
+      content : "Estimate initial UAV hover point and relay count."
+
+    - name : "1. Bring Up"
+      icon : "ti-control-play"
+      content : "Start command services and deploy ground nodes."
+
+    - name : "2. Detect"
+      icon : "ti-target"
+      content : "Confirm partition with route, ping, and PTT failure."
+
+    - name : "3. Launch UAV"
+      icon : "ti-rocket"
+      content : "UAV relay joins mesh and begins autonomous monitoring."
+
+    - name : "4. Recover"
+      icon : "ti-check"
+      content : "Autonomous reposition restores route and cross-team PTT."

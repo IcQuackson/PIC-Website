@@ -1,12 +1,7 @@
 {{ $data := index site.Data site.Language.Lang }} {{ if
 $data.banner.banner.enable }} {{ with $data.banner.banner }} {{"<!-- Welcome Slider-->"
 | safeHTML}}
-<section
-  class="hero-area" {{ partial `bg-image.html` (dict `Src` .bg_image_webp) | safeHTMLAttr }}
->
-  {{ partial "image" (dict "Src" .bg_image_webp "Alt"
-  .Title "Class" "d-none") }}
-
+<section class="hero-area">
   <div class="block">
     {{ if .icon }}
     <div class="video-button">
@@ -16,7 +11,7 @@ $data.banner.banner.enable }} {{ with $data.banner.banner }} {{"<!-- Welcome Sli
     <h1>{{ .title | markdownify }}</h1>
     <p>{{ .content | markdownify }}</p>
     {{ if .button.enable }} {{ with .button }}
-    <a href="{{ .link }}" class="btn btn-transparent page-scroll"
+    <a href="{{ .link | relLangURL }}" class="btn btn-transparent page-scroll"
       >{{ .label }}</a
     >
     {{ end }} {{ end }}

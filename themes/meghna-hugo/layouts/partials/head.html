@@ -4,9 +4,24 @@
 
 	{{ "<!-- mobile responsive meta -->" | safeHTML }}
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
+	{{ $metaDescription := "" }}
+	{{ with .Description }}{{ $metaDescription = . }}{{ else }}{{ with site.Params.description }}{{ $metaDescription = . }}{{ end }}{{ end }}
+	<meta name="description" content="{{ $metaDescription }}">
 	{{ with site.Params.author }}
 	<meta name="author" content="{{ . }}">{{ end }}
+	<link rel="canonical" href="{{ .Permalink }}">
+	<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+	<meta property="og:title" content="{{ .Title }}">
+	<meta property="og:description" content="{{ $metaDescription }}">
+	<meta property="og:url" content="{{ .Permalink }}">
+	<meta property="og:site_name" content="{{ site.Title }}">
+	{{ with site.Params.social_image }}
+	<meta property="og:image" content="{{ . | absURL }}">
+	<meta name="twitter:image" content="{{ . | absURL }}">
+	{{ end }}
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="{{ .Title }}">
+	<meta name="twitter:description" content="{{ $metaDescription }}">
 	
 	<!-- theme meta -->
         <meta name="theme-name" content="meghna-hugo" />
@@ -14,20 +29,34 @@
 
 	{{ "<!-- plugins -->" | safeHTML }}
 	{{ range site.Params.plugins.css }}
-	<link rel="stylesheet" href="{{ .link | absURL }}">
+	{{ if findRE `^https?://` .link }}
+	<link rel="stylesheet" href="{{ .link }}">
+	{{ else }}
+	<link rel="stylesheet" href="{{ .link | relURL }}">
+	{{ end }}
 	{{ end }}
 
 	{{"<!-- Main Stylesheet -->"|safeHTML}}
-	{{ $styles := resources.Get "css/style.css" | minify }}
-	<link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+	{{ $styles := resources.Get "css/style.css" | minify | fingerprint "sha384" }}
+	<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
 
 	{{"<!-- Custom stylesheet - for your changes -->" |safeHTML}}
-	{{ $custom := resources.Get "css/custom.css" | minify }}
-  <link rel="stylesheet" href="{{ $custom.Permalink }}" media="screen">
+	{{ $custom := resources.Get "css/custom.css" | minify | fingerprint "sha384" }}
+  <link rel="stylesheet" href="{{ $custom.RelPermalink }}" integrity="{{ $custom.Data.Integrity }}" media="screen">
 
 	{{ "<!--Favicon-->" | safeHTML }}
-	<link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
-	<link rel="icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
+	{{ $favicon := "images/favicon.png" }}
+	{{ with site.Params.favicon }}{{ $favicon = . }}{{ end }}
+	{{ $faviconRes := resources.Get $favicon }}
+	{{ if $faviconRes }}
+	{{ $faviconFP := $faviconRes | fingerprint "sha384" }}
+	<link rel="shortcut icon" href="{{ $faviconFP.RelPermalink }}" type="image/png">
+	<link rel="icon" href="{{ $faviconFP.RelPermalink }}" type="image/png">
+	<link rel="apple-touch-icon" href="{{ $faviconFP.RelPermalink }}">
+	{{ else }}
+	<link rel="shortcut icon" href="{{ $favicon | relURL }}" type="image/x-icon">
+	<link rel="icon" href="{{ $favicon | relURL }}" type="image/x-icon">
+	{{ end }}
 
 	{{ with site.Params.google_analytics_id }}
 	{{ "<!-- Global Site Tag (gtag.js) - Google Analytics -->" | safeHTML }}

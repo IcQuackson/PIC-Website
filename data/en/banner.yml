@@ -1,10 +1,12 @@
 ############################### Banner ################################
 banner:
   enable : true
-  bg_image_webp : "images/backgrounds/hero-area.webp"
-  bg_image : "images/backgrounds/hero-area.jpg"
-  icon : "" # themify icon pack : https://themify.me/themify-icons
-  title : "Experience the new reality"
-  content : "<a href='#about' class='btn btn-main'>Our proposal</a>"  
-button:
-  enable : false  # Disable the default button to avoid duplicates
+  bg_image_webp : "images/backgrounds/hero-sar.svg"
+  bg_image : "images/backgrounds/hero-sar.svg"
+  icon : ""
+  title : "Aerial-Ground Mesh Networking for Wilderness SAR"
+  content : "Offline mesh + UAV relay self-repair for mountain search and rescue operations."
+  button:
+    enable : true
+    label : "Read Full Proposal"
+    link : "uploads/proposal.pdf"

@@ -1,0 +1,58 @@
+{{ $data := index site.Data site.Language.Lang }}
+
+{{ if $data.proposal.proposal.enable }}
+{{ with $data.proposal.proposal }}
+<section id="evidence" class="section proposal-evidence">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 wow fadeInUp" data-wow-duration="500ms">
+        <div class="evidence-panel">
+          <h3>{{ .requirements.title }}</h3>
+          <ul>
+            {{ range .requirements.items }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
+        <div class="evidence-panel">
+          <h3>{{ .kpis.title }}</h3>
+          <ul>
+            {{ range .kpis.items }}
+            <li>{{ . }}</li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-lg-12 wow fadeInUp" data-wow-duration="500ms">
+        <div class="evidence-panel">
+          <h3>{{ .acceptance.title }}</h3>
+          <div class="table-responsive">
+            <table class="acceptance-table">
+              <thead>
+                <tr>
+                  <th>{{ index .acceptance.columns 0 }}</th>
+                  <th>{{ index .acceptance.columns 1 }}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {{ range .acceptance.rows }}
+                <tr>
+                  <td>{{ .proof }}</td>
+                  <td>{{ .criteria }}</td>
+                </tr>
+                {{ end }}
+              </tbody>
+            </table>
+          </div>
+          <p class="primary-success">{{ .primary_success }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

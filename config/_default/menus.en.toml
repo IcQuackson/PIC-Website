@@ -1,16 +1,26 @@
 
 ################### English Navigation ########################
 [[main]]
-name = "about"
+name = "mission"
 url = "#about"
 weight = 1
 
 [[main]]
-name = "team"
-url = "#team"
+name = "architecture"
+url = "#feature"
 weight = 2
+
+[[main]]
+name = "workflow"
+url = "#services"
+weight = 3
 
 [[main]]
 name = "blog"
 url = "#blog"
-weight = 3
+weight = 4
+
+[[main]]
+name = "team"
+url = "#team"
+weight = 5

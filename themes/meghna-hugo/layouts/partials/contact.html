@@ -9,8 +9,7 @@
 			<div class="col-lg-12">
 				{{"<!-- section title -->" | safeHTML}}
 				<div class="title text-center wow fadeIn" data-wow-duration="500ms">
-					<h2>{{ with .title }} {{ index (split . " ") 0 | safeHTML }} {{ end }}<span class="color">
-							{{ with .title }} {{ after (len (index (split . " ") 0)) . | safeHTML }} {{ end }}</span></h2>
+					<h2>{{ .title | markdownify }}</h2>
 					<div class="border-meghna"></div>
 				</div>
 			</div>
@@ -26,7 +25,13 @@
 					{{ range .contact_list }}
 					<div class="con-info clearfix">
 						<i class="{{ .icon }}"></i>
-						<span>{{ .info }}</span>
+						<span>
+							{{ if findRE "^https?://" .info }}
+							<a href="{{ .info }}" target="_blank" rel="noopener">{{ .info }}</a>
+							{{ else }}
+							{{ .info }}
+							{{ end }}
+						</span>
 					</div>
 					{{ end }}
 				</div>
@@ -58,11 +63,17 @@
 			</div>
 			{{ end }}
 			{{ else }}
-			<div class="contact-details">
+				<div class="contact-details col-lg-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
 				{{ range .contact_list }}
 				<div class="con-info clearfix">
 					<i class="{{ .icon }}"></i>
-					<span>{{ .info }}</span>
+					<span>
+						{{ if findRE "^https?://" .info }}
+						<a href="{{ .info }}" target="_blank" rel="noopener">{{ .info }}</a>
+						{{ else }}
+						{{ .info }}
+						{{ end }}
+					</span>
 				</div>
 				{{ end }}
 			</div>
