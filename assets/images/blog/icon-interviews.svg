@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Interviews icon</title>
+  <desc id="desc">Speech bubbles representing interviews.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1b2a"/>
+      <stop offset="100%" stop-color="#163553"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" rx="32" fill="url(#bg)"/>
+  <path d="M118 110h194a22 22 0 0 1 22 22v74a22 22 0 0 1-22 22H214l-46 34v-34h-50a22 22 0 0 1-22-22v-74a22 22 0 0 1 22-22Z" fill="#f4f8fb"/>
+  <path d="M352 160h170a22 22 0 0 1 22 22v62a22 22 0 0 1-22 22h-42v30l-40-30H352a22 22 0 0 1-22-22v-62a22 22 0 0 1 22-22Z" fill="#7fe0ff"/>
+  <circle cx="170" cy="170" r="16" fill="#163553"/>
+  <circle cx="220" cy="170" r="16" fill="#163553"/>
+  <circle cx="270" cy="170" r="16" fill="#163553"/>
+  <circle cx="406" cy="212" r="13" fill="#0b1624"/>
+  <circle cx="448" cy="212" r="13" fill="#0b1624"/>
+  <circle cx="490" cy="212" r="13" fill="#0b1624"/>
+</svg>

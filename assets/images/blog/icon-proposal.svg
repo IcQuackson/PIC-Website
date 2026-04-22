@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Proposal icon</title>
+  <desc id="desc">Document and approval themed illustration.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1b2a"/>
+      <stop offset="100%" stop-color="#132b45"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" rx="32" fill="url(#bg)"/>
+  <rect x="170" y="72" width="220" height="260" rx="18" fill="#f4f8fb"/>
+  <rect x="212" y="118" width="138" height="14" rx="7" fill="#80dcff"/>
+  <rect x="212" y="154" width="106" height="10" rx="5" fill="#b7c7d8"/>
+  <rect x="212" y="182" width="132" height="10" rx="5" fill="#b7c7d8"/>
+  <rect x="212" y="210" width="94" height="10" rx="5" fill="#b7c7d8"/>
+  <circle cx="432" cy="248" r="52" fill="#7fe0ff"/>
+  <path d="M407 248l18 18 33-40" fill="none" stroke="#0b1624" stroke-linecap="round" stroke-linejoin="round" stroke-width="14"/>
+</svg>

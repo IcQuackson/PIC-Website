@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Materials icon</title>
+  <desc id="desc">Box and invoice themed illustration.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#102235"/>
+      <stop offset="100%" stop-color="#173a58"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" rx="32" fill="url(#bg)"/>
+  <rect x="120" y="144" width="180" height="132" rx="18" fill="#b88746"/>
+  <path d="M120 166l90-58 90 58" fill="#d4a465"/>
+  <path d="M210 108v168" fill="none" stroke="#996b33" stroke-width="10"/>
+  <rect x="354" y="92" width="164" height="216" rx="18" fill="#f4f8fb"/>
+  <rect x="388" y="136" width="96" height="12" rx="6" fill="#7fe0ff"/>
+  <rect x="388" y="172" width="76" height="10" rx="5" fill="#bcc8d5"/>
+  <rect x="388" y="200" width="96" height="10" rx="5" fill="#bcc8d5"/>
+  <rect x="388" y="228" width="64" height="10" rx="5" fill="#bcc8d5"/>
+  <rect x="388" y="258" width="82" height="20" rx="10" fill="#173a58"/>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Pitch deck icon</title>
+  <desc id="desc">Presentation board representing draft pitch submission.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1f31"/>
+      <stop offset="100%" stop-color="#143654"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" rx="32" fill="url(#bg)"/>
+  <rect x="138" y="86" width="364" height="198" rx="16" fill="#f4f8fb"/>
+  <rect x="174" y="122" width="166" height="18" rx="9" fill="#173a58"/>
+  <rect x="174" y="160" width="124" height="12" rx="6" fill="#7fe0ff"/>
+  <rect x="174" y="188" width="144" height="12" rx="6" fill="#b8c9d6"/>
+  <rect x="174" y="216" width="110" height="12" rx="6" fill="#b8c9d6"/>
+  <path d="M224 284h192" fill="none" stroke="#8cb7d7" stroke-linecap="round" stroke-width="10"/>
+  <path d="M280 284l-24 48M360 284l24 48" fill="none" stroke="#8cb7d7" stroke-linecap="round" stroke-width="10"/>
+  <circle cx="414" cy="174" r="44" fill="#7fe0ff"/>
+  <path d="M392 194v-38h38" fill="none" stroke="#0b1624" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"/>
+  <path d="M392 156l38 38" fill="none" stroke="#0b1624" stroke-linecap="round" stroke-width="12"/>
+</svg>

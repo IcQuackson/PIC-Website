@@ -8,7 +8,7 @@ feature:
   feature_item:
     - icon : "ti-rss-alt"
       title : "Mesh Backbone"
-      content : "BATMAN-adv on 2.4 GHz Wi-Fi with fixed node roles."
+      content : "Decentralized routing algorithm (Babel) and 2.4 GHz Wi-Fi with fixed node roles."
 
     - icon : "ti-volume"
       title : "PTT Voice"
@@ -16,7 +16,7 @@ feature:
 
     - icon : "ti-map-alt"
       title : "Telemetry"
-      content : "GPS, link quality, and partition state are tracked locally."
+      content : "GPS, link quality, and partition state are tracked locally monitored in HQ dashboard"
 
     - icon : "ti-control-shuffle"
       title : "Autonomous Repair"

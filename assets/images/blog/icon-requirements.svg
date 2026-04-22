@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Requirements icon</title>
+  <desc id="desc">Checklist representing solution requirements.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f1f31"/>
+      <stop offset="100%" stop-color="#183857"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" rx="32" fill="url(#bg)"/>
+  <rect x="146" y="72" width="348" height="256" rx="24" fill="#f4f8fb"/>
+  <rect x="198" y="120" width="30" height="30" rx="6" fill="#7fe0ff"/>
+  <path d="M205 136l7 7 14-18" fill="none" stroke="#0b1624" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+  <rect x="248" y="126" width="184" height="12" rx="6" fill="#173453"/>
+  <rect x="198" y="176" width="30" height="30" rx="6" fill="#7fe0ff"/>
+  <path d="M205 191l7 7 14-18" fill="none" stroke="#0b1624" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+  <rect x="248" y="182" width="164" height="12" rx="6" fill="#173453"/>
+  <rect x="198" y="232" width="30" height="30" rx="6" fill="#7fe0ff"/>
+  <path d="M205 247l7 7 14-18" fill="none" stroke="#0b1624" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+  <rect x="248" y="238" width="194" height="12" rx="6" fill="#173453"/>
+</svg>
