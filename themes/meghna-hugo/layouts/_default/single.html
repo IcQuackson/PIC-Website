@@ -6,6 +6,11 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 offset-lg-2 text-center">
+        <div class="post-breadcrumbs mb-4">
+          <a href="{{ site.BaseURL | relLangURL }}">Home</a>
+          <span>/</span>
+          <a href="{{ printf "%s#blog" (site.BaseURL | relLangURL) }}">Blog</a>
+        </div>
         <h1>{{ .Title }}</h1>
         <ul class="list-inline mb-50">
           <li class="list-inline-item"><a href="{{ `author/` | relLangURL }}{{ .Params.Author | urlize }}/">{{ .Params.Author }}</a></li>
@@ -18,8 +23,8 @@
           {{ .Content }}
         </div>
 
-        <div class="mt-50">
-          <a href="{{ `blog/` | relLangURL }}" class="btn btn-main">← Back to Blog</a>
+        <div class="post-actions mt-50">
+          <a href="{{ printf "%s#blog" (site.BaseURL | relLangURL) }}" class="btn btn-main">← Go back</a>
         </div>
 
         <div class="mt-5">

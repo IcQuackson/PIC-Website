@@ -1,4 +1,5 @@
 <article class="col-lg-4 col-md-6 col-12 clearfix wow fadeInUp mb-4" data-wow-duration="500ms">
+  {{ $pdfs := .Resources.Match "*.pdf" }}
   <div class="post-block">
     <div class="media-wrapper">
       {{ partial "image.html" (dict "Src" .Params.Image_webp "Alt" "Image" "Class" "img-fluid lozad") }}
@@ -7,6 +8,11 @@
     <div class="content">
       <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
       <p>{{ .Summary }}</p>
+      {{ if gt (len $pdfs) 0 }}
+      {{ with index $pdfs 0 }}
+      <a href="{{ .RelPermalink }}" class="post-card-pdf-link">View PDF</a>
+      {{ end }}
+      {{ end }}
     </div>
   </div>
 </article>

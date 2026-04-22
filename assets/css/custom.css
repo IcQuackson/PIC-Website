@@ -771,6 +771,114 @@ h6,
   height: 100%;
 }
 
+.post-breadcrumbs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: #9dc3e6;
+}
+
+.post-breadcrumbs a {
+  color: #8ed8ff;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2em;
+}
+
+.post-breadcrumbs a:hover,
+.post-breadcrumbs a:focus {
+  color: #ffffff;
+}
+
+.post-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+#blog .post-block .content h3,
+#blog .post-block .content h3 a,
+.post-block h3,
+.post-block h3 a {
+  font-weight: 800;
+}
+
+.post-card-pdf-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  color: #7fe0ff;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.18em;
+}
+
+.post-card-pdf-link::before {
+  content: "PDF";
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #7fe0ff;
+  color: #07101c;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.post-card-pdf-link:hover,
+.post-card-pdf-link:focus {
+  color: #ffffff;
+}
+
+.post-single-content a {
+  color: #7fe0ff;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.18em;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-single-content a:hover,
+.post-single-content a:focus {
+  color: #ffffff;
+  text-decoration-color: #ffffff;
+}
+
+.post-single-content a[href$=".pdf"] {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 10px 14px;
+  border: 1px solid rgba(127, 224, 255, 0.55);
+  border-radius: 999px;
+  background: rgba(127, 224, 255, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(127, 224, 255, 0.08);
+}
+
+.post-single-content a[href$=".pdf"]::before {
+  content: "PDF";
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #7fe0ff;
+  color: #07101c;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.post-single-content a[href$=".pdf"]:hover,
+.post-single-content a[href$=".pdf"]:focus {
+  background: rgba(127, 224, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
 /* Hero reset with faded tech-symbol background */
 .hero-area {
   background: linear-gradient(180deg, #0b1423 0%, #101a2b 100%) !important;

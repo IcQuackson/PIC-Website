@@ -7,6 +7,11 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
+        <div class="post-breadcrumbs text-center mb-4">
+          <a href="{{ site.BaseURL | relLangURL }}">Home</a>
+          <span>/</span>
+          <span>Blog</span>
+        </div>
         {{"<!-- section title -->" | safeHTML}}
         <div class="title text-center wow fadeInDown">
           <h2>{{ with i18n "blogTitle" }} {{ index (split . " ") 0 | safeHTML }} {{ end }}<span class="color">
@@ -21,6 +26,9 @@
       {{ end }}
       <div class="col-12">
         {{ template "_internal/pagination.html" . }}
+      </div>
+      <div class="col-12 text-center mt-4">
+        <a href="{{ printf "%s#blog" (site.BaseURL | relLangURL) }}" class="btn btn-main">← Go back</a>
       </div>
     </div>
   </div>
