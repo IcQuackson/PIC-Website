@@ -6,8 +6,8 @@ image: "images/blog/icon-final-submission.svg"
 image_webp: "images/blog/icon-final-submission.svg"
 ---
 
-The final deck is more useful than the draft because it makes the value proposition explicit. ElectroCap is positioned as an offline communications kit for institutional emergency operators, not a generic drone demo or a consumer product.
+The final deck makes the positioning explicit: ElectroCap is an offline communications kit for institutional emergency operators, not a generic drone demo.
 
-The strongest conclusion from the slides is that the team is competing on integration: voice, maps, monitoring, and UAV-assisted repair in one reproducible workflow, with measurable validation criteria instead of vague claims about "better coverage."
+Its strongest point is integration: voice, maps, monitoring, and UAV-assisted repair in one reproducible workflow with measurable validation criteria.
 
 [View the mid-program pitch deck](mid_program_pitch.pdf)

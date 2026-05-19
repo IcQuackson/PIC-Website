@@ -6,6 +6,6 @@ image: "images/blog/icon-proposal.svg"
 image_webp: "images/blog/icon-proposal.svg"
 ---
 
-On **March 3, 2026**, we finalized the website and submitted a proposal with a much sharper engineering scope: an aerial-ground mesh for wilderness search and rescue that uses UAV relays to reconnect teams when terrain splits the network.
+On **March 3, 2026**, we submitted a proposal for an aerial-ground mesh that restores search-and-rescue communications when terrain splits the network.
 
-The key point in the proposal is that the project is not trying to invent a new routing protocol. The real deliverable is an end-to-end offline system that can pre-plan relay positions, detect partitions in the field, and restore voice and telemetry links with repeatable acceptance evidence.
+The key decision was scope: not a new routing protocol, but a complete offline system that can plan relay positions, detect partitions, and restore voice and telemetry links.

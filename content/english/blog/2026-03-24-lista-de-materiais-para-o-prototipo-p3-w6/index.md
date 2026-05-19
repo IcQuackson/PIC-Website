@@ -6,7 +6,7 @@ image: "images/blog/icon-materials.svg"
 image_webp: "images/blog/icon-materials.svg"
 ---
 
-The bill of materials shows that the first prototype is intentionally modest: most of the budget goes into the mesh nodes themselves, not exotic hardware.
+The bill of materials shows an intentionally simple first prototype: most of the budget goes into the mesh nodes themselves, not exotic hardware.
 
 The current supplier cost breakdown is:
 
@@ -17,6 +17,6 @@ The current supplier cost breakdown is:
 | Others | 0 |
 | Total | 201,27 |
 
-The attached list makes that concrete: **three GL-AR300M16-Ext routers** account for the Mauser order, and the PTRobotics share is a **Nitecore NB10000** power bank. That is a sensible baseline for validating mesh behavior first, before spending on more specialized payload integration.
+The attached list makes that concrete: **three GL-AR300M16-Ext routers** plus a **Nitecore NB10000** power bank, for a current total of **201,27**. It is a sensible baseline for validating mesh behavior before spending on more specialized payload integration.
 
 [View the equipment list](lista%20de%20equipamento%20da%20equipa%2018.pdf)
