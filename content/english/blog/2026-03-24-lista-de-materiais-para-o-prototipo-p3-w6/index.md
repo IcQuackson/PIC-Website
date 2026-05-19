@@ -6,7 +6,7 @@ image: "images/blog/icon-materials.svg"
 image_webp: "images/blog/icon-materials.svg"
 ---
 
-The bill of materials provides an estimate of the cost of the final solution and helps the team start the requisition process for the materials needed to build the prototype.
+The bill of materials shows that the first prototype is intentionally modest: most of the budget goes into the mesh nodes themselves, not exotic hardware.
 
 The current supplier cost breakdown is:
 
@@ -16,5 +16,7 @@ The current supplier cost breakdown is:
 | PTRobotics | 78,49 |
 | Others | 0 |
 | Total | 201,27 |
+
+The attached list makes that concrete: **three GL-AR300M16-Ext routers** account for the Mauser order, and the PTRobotics share is a **Nitecore NB10000** power bank. That is a sensible baseline for validating mesh behavior first, before spending on more specialized payload integration.
 
 [View the equipment list](lista%20de%20equipamento%20da%20equipa%2018.pdf)

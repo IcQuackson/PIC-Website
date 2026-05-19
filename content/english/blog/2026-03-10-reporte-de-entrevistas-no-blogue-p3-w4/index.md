@@ -6,6 +6,6 @@ image: "images/blog/icon-interviews.svg"
 image_webp: "images/blog/icon-interviews.svg"
 ---
 
-During project development, teams should conduct interviews with beneficiaries and other interested people to validate both the problem and the proposed solution.
+The stakeholder feedback behind ElectroCap pointed to a practical constraint that matters more than elegance: rescue teams will not accept heavy, fiddly networking gear when time and mobility are critical.
 
-The results should be reported on the team blog.
+That feedback pushed the project toward a simpler operational model: responders should be able to communicate from ordinary phones over a closed local network, while the UAV layer handles the hard part of restoring connectivity when geography breaks the mesh.

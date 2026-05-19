@@ -6,6 +6,6 @@ image: "images/blog/icon-pitch.svg"
 image_webp: "images/blog/icon-pitch.svg"
 ---
 
-Each team may, if it wishes, email a draft version of the midterm presentation to its ElectroCap scientific advisor and ElectroCap teaching assistant.
+The draft midterm presentation is where the project stops sounding like a concept note and starts reading like a system design. By this stage, the story is clear: portable ground nodes form the offline mesh, a UAV relay is used only when the topology breaks, and the command node hosts voice, maps, and monitoring locally.
 
-This ElectroCap mid-program pitch deck documents the current development status of the project and allows for corrections before the final submission.
+What makes the draft worth reviewing early is that it also commits to a current maturity claim. The team is not presenting a finished field kit yet; it is presenting a controllable mesh-network simulator with bring-up, telemetry, and route-update testing that should justify the next prototype decisions.
