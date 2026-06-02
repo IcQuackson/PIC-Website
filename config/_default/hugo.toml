@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 BaseURL = "https://icquackson.github.io/PIC-Website/"
-title = "Aerial-Ground Mesh Networking SAR"
+title = "SkyMesh"
 theme = "meghna-hugo"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
 timeZone = "Europe/Lisbon"
@@ -95,6 +95,7 @@ link = "plugins/google-map/map.js"
 ############################# Default Parameters ##########################
 [params]
 logo = "images/logo-main.png"
+logo_wordmark = "images/skymesh_wordmark_no_bg.png"
 # Meta data
 description = "Aerial-Ground Mesh Networking System for Wilderness Search and Rescue"
 author = "ElectroCap PIC1 Team"
