@@ -97,10 +97,11 @@ link = "plugins/google-map/map.js"
 logo = "images/logo-main.png"
 logo_wordmark = "images/skymesh_wordmark_no_bg.png"
 # Meta data
-description = "Aerial-Ground Mesh Networking System for Wilderness Search and Rescue"
-author = "ElectroCap PIC1 Team"
+description = "SkyMesh is a self-healing offline communications mesh that uses UAV relays to reconnect rescue teams across terrain, distance, and damaged infrastructure."
+author = "SkyMesh Team"
 favicon = "images/logo-main.png"
-social_image = "images/logo-main.png"
+social_image = "images/backgrounds/background_image.png"
+social_image_alt = "SkyMesh aerial mesh network preview"
 # Google Analytics
 google_analytics_id = "" # Your ID
 # post share

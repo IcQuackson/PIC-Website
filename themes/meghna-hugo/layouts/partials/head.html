@@ -15,13 +15,21 @@
 	<meta property="og:description" content="{{ $metaDescription }}">
 	<meta property="og:url" content="{{ .Permalink }}">
 	<meta property="og:site_name" content="{{ site.Title }}">
+	<meta property="og:locale" content="{{ replace site.Language.LanguageCode "-" "_" }}">
 	{{ with site.Params.social_image }}
 	<meta property="og:image" content="{{ . | absURL }}">
+	<meta property="og:image:secure_url" content="{{ . | absURL }}">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="1672">
+	<meta property="og:image:height" content="941">
+	{{ with site.Params.social_image_alt }}<meta property="og:image:alt" content="{{ . }}">{{ end }}
 	<meta name="twitter:image" content="{{ . | absURL }}">
+	{{ with site.Params.social_image_alt }}<meta name="twitter:image:alt" content="{{ . }}">{{ end }}
 	{{ end }}
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="{{ .Title }}">
 	<meta name="twitter:description" content="{{ $metaDescription }}">
+	<meta name="theme-color" content="#000218">
 	
 	<!-- theme meta -->
         <meta name="theme-name" content="meghna-hugo" />
