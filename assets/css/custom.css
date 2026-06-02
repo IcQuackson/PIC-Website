@@ -1010,6 +1010,15 @@ h6,
   margin-right: 0;
 }
 
+.hero-area .block p,
+.hero-area .hero-copy p {
+  width: auto;
+  max-width: 620px;
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 @media (max-width: 991.98px) {
   .hero-area {
     min-height: auto;
@@ -1054,6 +1063,11 @@ h6,
   .hero-area p {
     font-size: 0.92rem;
     line-height: 1.55;
+    max-width: 92vw;
+  }
+
+  .hero-area .block p,
+  .hero-area .hero-copy p {
     max-width: 92vw;
   }
 
