@@ -10,8 +10,8 @@ about:
 
     - icon : "ti-direction-alt"
       title : "Goal"
-      content : "Restore team connectivity and PTT using a UAV relay in a closed offline mesh."
+      content : "Reconnect field teams and restore push-to-talk voice using UAV relays in a secure offline mesh."
 
     - icon : "ti-check-box"
       title : "Proof"
-      content : "Show fail-before-UAV and pass-after-UAV with logged timing evidence."
+      content : "Show the system failing before the UAV relay, then recovering it."
