@@ -3,19 +3,14 @@
 {{ if $data.feature.feature.enable }}
 {{ with $data.feature.feature }}
 {{"<!-- feature -->" | safeHTML}}
-<section class="section section-bg about-2 padding-0" id="feature">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-6 padding-0" {{ partial `bg-image.html` (dict `Src` .image_webp ) | safeHTMLAttr }}>
-				<!-- this image is for trigger this section fallback background image -->
-  {{ partial "image" (dict "Src" .image "Alt"
-  .title "Class" "d-none") }}
-			</div>
-			<div class="col-lg-6">
-				<div class="content-block">
+<section class="section section-bg about-2" id="feature">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-10">
+				<div class="content-block architecture-content">
 					<h2>{{ .title | markdownify }}</h2>
 					<p>{{ .content | markdownify }}</p>
-					<div class="row">
+					<div class="row architecture-grid">
 						{{ range .feature_item }}
 						<div class="col-lg-6">
 							<div class="media">

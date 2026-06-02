@@ -1,8 +1,6 @@
 ############################### Feature ###################################
 feature:
   enable : true
-  image : "images/backgrounds/hero-sar.svg"
-  image_webp : "images/backgrounds/hero-sar.svg"
   title : "System Architecture"
   content : "Command, team nodes, ground relay, and UAV relay operate in one offline network."
   feature_item:
@@ -11,13 +9,13 @@ feature:
       content : "Decentralized routing algorithm (Babel) and 2.4 GHz Wi-Fi with fixed node roles."
 
     - icon : "ti-volume"
-      title : "PTT Voice"
+      title : "Push-To-Talk Voice"
       content : "Local Murmur + Mumble with no internet dependency."
 
     - icon : "ti-map-alt"
       title : "Telemetry"
-      content : "GPS, link quality, and partition state are tracked locally monitored in HQ dashboard"
+      content : "GPS, link quality, and partition state are tracked locally monitored in Command dashboard"
 
     - icon : "ti-control-shuffle"
-      title : "Autonomous Repair"
-      content : "UAV relay repositions to reconnect partitions and stabilize routes."
+      title : "ML-Driven Mesh Repair"
+      content : "Multi-agent reinforcement learning guides UAV relays to reconnect isolated teams."

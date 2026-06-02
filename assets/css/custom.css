@@ -299,14 +299,17 @@ a:focus {
   position: relative;
 }
 
-.about-2 .padding-0:first-child {
-  min-height: 420px;
-  background-size: cover;
-  background-position: center;
-}
-
 .about-2 .content-block {
   padding: 58px clamp(20px, 4vw, 60px);
+}
+
+.about-2 .architecture-content {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.about-2 .architecture-grid {
+  row-gap: 18px;
 }
 
 .about-2 .content-block h2 {
@@ -528,10 +531,6 @@ a:focus {
 
   .section {
     padding: 72px 0;
-  }
-
-  .about-2 .padding-0:first-child {
-    min-height: 280px;
   }
 }
 
