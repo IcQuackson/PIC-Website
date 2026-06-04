@@ -17,7 +17,7 @@ html,
 body {
   background: linear-gradient(180deg, #000218 0%, #010725 54%, #000d3e 100%);
   color: var(--text);
-  font-family: "Manrope", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
 }
 
 html {
@@ -785,7 +785,7 @@ a:focus {
 
 /* Simplified layout adjustments */
 body {
-  font-family: "Manrope", sans-serif;
+  font-family: "Chakra Petch", sans-serif;
 }
 
 h1,
@@ -1085,7 +1085,32 @@ h6,
 
 /* Font enforcement (without overriding icon fonts) */
 body {
-  font-family: "Manrope", "Segoe UI", "Noto Sans", sans-serif;
+  font-family: "Chakra Petch", "Orbitron", "Rajdhani", sans-serif;
+}
+
+body,
+p,
+span,
+li,
+a,
+label,
+input,
+textarea,
+select,
+button,
+table,
+th,
+td,
+.post-single-content,
+.post-meta,
+.member-meta,
+.visual-card-body,
+.media-body,
+.metric-chip,
+.risk-card,
+.timeline-item,
+.evidence-panel {
+  font-family: "Chakra Petch", "Orbitron", "Rajdhani", sans-serif;
 }
 
 h1,
