@@ -1175,21 +1175,38 @@ h6,
 }
 
 @media (max-width: 575.98px) {
+  .navigation .navbar {
+    flex-wrap: nowrap;
+  }
+
   .navigation .navbar-brand {
-    max-width: 184px !important;
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    max-width: calc(100vw - 86px) !important;
     gap: 8px !important;
   }
 
+  .navigation .navbar-toggler {
+    flex: 0 0 auto;
+    margin-left: auto;
+  }
+
   .navigation .navbar-brand .brand-logo {
+    flex: 0 0 auto !important;
     height: 34px !important;
     max-width: 34px !important;
     max-height: 34px !important;
   }
 
   .navigation .navbar-brand .brand-wordmark {
-    height: 21px !important;
-    max-width: 138px !important;
-    max-height: 21px !important;
+    display: block !important;
+    flex: 0 1 clamp(96px, 36vw, 128px) !important;
+    width: clamp(96px, 36vw, 128px) !important;
+    height: auto !important;
+    max-width: 128px !important;
+    max-height: 23px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
   }
 }
 
@@ -1218,4 +1235,192 @@ h6,
   width: auto;
   object-fit: contain;
   opacity: 0.95;
+}
+
+/* Responsive section rhythm and overflow guards */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+svg,
+video,
+canvas,
+iframe {
+  max-width: 100%;
+}
+
+.section {
+  padding-top: clamp(44px, 5vw, 64px) !important;
+  padding-bottom: clamp(44px, 5vw, 64px) !important;
+}
+
+.section-sm {
+  padding-top: clamp(34px, 4vw, 52px) !important;
+  padding-bottom: clamp(34px, 4vw, 52px) !important;
+}
+
+.title {
+  padding-bottom: clamp(22px, 2.6vw, 34px) !important;
+}
+
+.title h2,
+.about-2 .content-block h2 {
+  font-size: clamp(1.65rem, 2.4vw, 2.45rem);
+  line-height: 1.16;
+  margin-bottom: 8px;
+  text-wrap: balance;
+}
+
+.border-meghna {
+  margin: 0 auto;
+}
+
+.hero-area + .about.section {
+  padding-top: clamp(44px, 5vw, 64px) !important;
+}
+
+.hero-area .block,
+.hero-area .hero-copy {
+  width: min(680px, calc(100vw - 32px));
+  min-width: 0;
+  max-width: min(680px, calc(100vw - 32px));
+}
+
+.hero-area h1,
+.hero-area p,
+.title h2,
+.architecture-intro,
+.about .content p,
+.service-block p,
+.media-body p,
+.risk-card p,
+.timeline-item p,
+.visual-card-body p,
+.metric-chip p,
+.post-single-content {
+  overflow-wrap: anywhere;
+}
+
+.hero-area h1 {
+  width: 100%;
+  max-width: 100%;
+}
+
+.hero-area .btn {
+  max-width: 100%;
+  white-space: normal;
+  text-align: center;
+}
+
+.architecture-content {
+  text-align: center;
+}
+
+.architecture-intro {
+  max-width: 760px;
+  margin: 0 auto 4px;
+  color: #c8daf2;
+}
+
+.architecture-grid {
+  text-align: left;
+}
+
+.about .row,
+#services .row,
+.architecture-grid,
+.validation-strip .row,
+.proposal-evidence .row,
+.visuals-section .row {
+  row-gap: clamp(14px, 2vw, 20px);
+}
+
+.about .block,
+#services .service-block,
+.about-2 .content-block .media,
+.metric-chip,
+.evidence-panel,
+.risk-card,
+.timeline-item,
+.visual-card {
+  border-radius: 10px;
+}
+
+@media (max-width: 991.98px) {
+  .section {
+    padding: 48px 0 !important;
+  }
+
+  .hero-area .block,
+  .hero-area .hero-copy {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    padding: 44px 20px 48px;
+  }
+
+  .about-2 .content-block {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section {
+    padding: 38px 0 !important;
+  }
+
+  .title {
+    padding-bottom: 20px !important;
+  }
+
+  .title h2,
+  .about-2 .content-block h2 {
+    font-size: clamp(1.45rem, 7vw, 1.9rem);
+  }
+
+  .hero-area .block,
+  .hero-area .hero-copy {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    padding: 32px 16px 38px;
+  }
+
+  .hero-area h1,
+  .hero-area p,
+  .hero-area .block p,
+  .hero-area .hero-copy p {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about .block,
+  #services .service-block,
+  .about-2 .content-block .media,
+  .metric-chip,
+  .evidence-panel,
+  .risk-card,
+  .timeline-item {
+    padding: 18px;
+  }
+
+  .about .block .icon-box {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 18px;
+  }
+
+  #services .service-block h3 {
+    min-height: 0;
+  }
 }

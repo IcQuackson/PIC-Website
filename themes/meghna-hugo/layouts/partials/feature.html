@@ -8,8 +8,11 @@
 		<div class="row justify-content-center">
 			<div class="col-lg-10">
 				<div class="content-block architecture-content">
-					<h2>{{ .title | markdownify }}</h2>
-					<p>{{ .content | markdownify }}</p>
+					<div class="title text-center wow fadeIn" data-wow-duration="500ms">
+						<h2>{{ .title | markdownify }}</h2>
+						<div class="border-meghna"></div>
+					</div>
+					<p class="architecture-intro">{{ .content | markdownify }}</p>
 					<div class="row architecture-grid">
 						{{ range .feature_item }}
 						<div class="col-lg-6">
