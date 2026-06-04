@@ -419,7 +419,7 @@ a:focus {
 .member-meta span {
   color: #b9ddfb;
   display: block;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .member-meta p {
@@ -1454,5 +1454,16 @@ iframe {
 
   #services .service-block h3 {
     min-height: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    font-size: 20px;
+  }
+
+  .post-single-content {
+    font-size: 18px;
+    line-height: 1.75;
   }
 }
