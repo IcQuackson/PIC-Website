@@ -138,6 +138,10 @@ a:focus {
   line-height: 1;
 }
 
+.navigation .brand-wordmark-text {
+  display: none;
+}
+
 .navigation .nav-link {
   color: #d4e5ff !important;
   font-family: "Chakra Petch", sans-serif;
@@ -1199,14 +1203,17 @@ h6,
   }
 
   .navigation .navbar-brand .brand-wordmark {
-    display: block !important;
-    flex: 0 1 clamp(96px, 36vw, 128px) !important;
-    width: clamp(96px, 36vw, 128px) !important;
-    height: auto !important;
-    max-width: 128px !important;
-    max-height: 23px !important;
-    opacity: 1 !important;
-    visibility: visible !important;
+    display: none !important;
+  }
+
+  .navigation .brand-wordmark-text {
+    display: inline-block;
+    flex: 0 1 auto;
+    color: #168cf0;
+    font-size: clamp(1.08rem, 6vw, 1.38rem);
+    font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
   }
 }
 

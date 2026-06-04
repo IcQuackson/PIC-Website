@@ -4,7 +4,7 @@ visuals:
   items:
     - title: "Architecture Diagram"
       image: "images/about/architecture-diagram.svg"
-      text: "Command, team nodes, ground relay, and UAV relay integration."
+      text: "Command, team nodes, and UAV relay integration."
     - title: "Field Deployment"
       image: "images/about/field-deployment.svg"
       text: "Deployment scene with ground relay hardware and UAV support."

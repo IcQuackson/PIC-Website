@@ -2,7 +2,7 @@
 feature:
   enable : true
   title : "System Architecture"
-  content : "Command, team nodes, ground relay, and UAV relay operate in one offline network."
+  content : "Command, team nodes, and UAV relay operate in one offline network."
   feature_item:
     - icon : "ti-rss-alt"
       title : "Mesh Backbone"
@@ -14,7 +14,7 @@ feature:
 
     - icon : "ti-map-alt"
       title : "Telemetry"
-      content : "GPS, link quality, and partition state are tracked locally monitored in Command dashboard"
+      content : "Geo Location, link quality, and network fails are tracked locally monitored in Command dashboard"
 
     - icon : "ti-control-shuffle"
       title : "ML-Driven Mesh Repair"

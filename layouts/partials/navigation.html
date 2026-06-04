@@ -1,16 +1,26 @@
 <section class="sticky-top navigation">
   <div class="container-fluid nav-shell">
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand p-0" href="{{ .Site.BaseURL | relLangURL }}">
+      <a class="navbar-brand p-0" href="{{ .Site.BaseURL | relLangURL }}" aria-label="SkyMesh">
         {{ if site.Params.logo }}
         <img
+          class="brand-logo"
           src="{{ site.Params.logo | relURL }}"
-          alt="{{ .Site.Title }}"
-          width="240"
+          alt=""
+          width="48"
           height="48"
-          style="width:auto;height:48px;max-width:240px;object-fit:contain;"
         >
-        {{ else }} {{ site.Title }} {{ end }}
+        {{ end }}
+        {{ if site.Params.logo_wordmark }}
+        <img
+          class="brand-wordmark"
+          src="{{ site.Params.logo_wordmark | relURL }}"
+          alt=""
+          width="201"
+          height="36"
+        >
+        <span class="brand-name brand-wordmark-text" aria-hidden="true">SkyMesh</span>
+        {{ else }}<span class="brand-name">SkyMesh</span>{{ end }}
       </a>
       <button
         class="navbar-toggler rounded-0"

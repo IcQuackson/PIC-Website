@@ -5,7 +5,7 @@ banner:
   bg_image : "images/backgrounds/background_image.png"
   icon : ""
   title : "Self-healing aerial mesh for rescue operations."
-  content : "A self-healing offline mesh that uses UAV relays to reconnect rescue teams across terrain, distance, and damaged infrastructure."
+  content : "SkyMesh is a self-healing offline mesh that uses UAV relays to reconnect rescue teams across terrain, distance, and damaged infrastructure."
   button:
     enable : true
     label : "Read Full Proposal"
